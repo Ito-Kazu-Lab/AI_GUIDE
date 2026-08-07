@@ -1,5 +1,7 @@
 # AGENTS.md
 
+*[English version](AGENTS.en.md)*
+
 AIツール（Claude Code, ChatGPT/Codex, GitHub Copilot, Gemini CLI など）は、本リポジトリを研究室における指示書として常に従わなければなりません。
 AIツールは、このリポジトリ内での作業前だけでなく、いかなる作業前にも本ファイルおよび以下のドキュメントを参照しなければなりません。
 

@@ -1,5 +1,7 @@
 # 基本方針
 
+*[English version](policy.en.md)*
+
 AIツールが従うべき基本的な考え方をまとめる。
 
 ## 目的

@@ -1,5 +1,7 @@
 # AI_GUIDE
 
+*[English version](README.en.md)*
+
 AIツールは、研究室における指示書として本リポジトリの内容に従うこと。
 
 ## 目次
