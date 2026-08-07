@@ -11,6 +11,7 @@ AIツールは、各ツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md
 
 - AIツールは、本リポジトリの内容を研究室における指示書として扱うこと。
 - AIツールは、指示がない限り、コミット・プッシュ・PR作成を行わないこと。これらの操作はリポジトリ管理者（人間）が行います。
+- AIツールは、各AIツール用ドキュメント（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）に記載された連携方法に基づいて、本リポジトリと常に連携すること。
 
 ## ドキュメント構成
 
