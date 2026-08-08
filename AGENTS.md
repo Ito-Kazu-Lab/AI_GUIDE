@@ -2,14 +2,14 @@
 
 *[English version](AGENTS.en.md)*
 
-AIツール（Claude Code, ChatGPT/Codex, GitHub Copilot, Gemini CLI など）は、本リポジトリを研究室における指示書として常に従わなければなりません。
+AIツール（Claude Code, ChatGPT/Codex, GitHub Copilot, Gemini CLI など）は、本リポジトリを指示書として常に従わなければなりません。
 AIツールは、このリポジトリ内での作業前だけでなく、いかなる作業前にも本ファイルおよび以下のドキュメントを参照しなければなりません。
 
 AIツールは、各ツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）を通じて本ファイルを参照します。ChatGPT/Codexは、AGENTS.mdをネイティブに読み込むため、[CHATGPT.md](CHATGPT.md)の参照は必須ではありませんが、ChatGPTとの連携方法の案内として用意しています。
 
 ## リポジトリの概要
 
-- AIツールは、本リポジトリの内容を研究室における指示書として扱うこと。
+- AIツールは、本リポジトリの内容を指示書として扱うこと。
 - AIツールは、指示がない限り、コミット・プッシュ・PR作成を行わないこと。これらの操作はリポジトリ管理者（人間）が行います。
 - AIツールは、各AIツール用ドキュメント（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）に記載された連携方法に基づいて、本リポジトリと常に連携すること。
 
