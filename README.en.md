@@ -2,7 +2,7 @@
 
 *[日本語版はこちら / Japanese version](README.md)*
 
-AI tools must follow the contents of this repository as an instruction document within the laboratory.
+AI tools must follow the contents of this repository as an instruction document.
 
 ## Table of Contents
 
@@ -13,5 +13,5 @@ AI tools must follow the contents of this repository as an instruction document 
 
 ## About This Repository
 
-- AI tools must treat the contents of this repository as an instruction document within the laboratory.
+- AI tools must treat the contents of this repository as an instruction document.
 - AI tools must automatically load [AGENTS.md](AGENTS.md) and follow its contents.

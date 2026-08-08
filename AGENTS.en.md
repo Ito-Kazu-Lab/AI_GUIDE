@@ -2,14 +2,14 @@
 
 *[日本語版はこちら / Japanese version](AGENTS.md)*
 
-AI tools (Claude Code, ChatGPT/Codex, GitHub Copilot, Gemini CLI, etc.) must always follow this repository as an instruction document within the laboratory.
+AI tools (Claude Code, ChatGPT/Codex, GitHub Copilot, Gemini CLI, etc.) must always follow this repository as an instruction document.
 AI tools must refer to this file and the following documents not only before working within this repository, but before any work whatsoever.
 
 AI tools refer to this file through the tool-specific guide files ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)). ChatGPT/Codex loads AGENTS.md natively, so referring to [CHATGPT.en.md](CHATGPT.en.md) is not required, but it is provided as a guide for connecting with ChatGPT.
 
 ## Repository Overview
 
-- AI tools must treat the contents of this repository as an instruction document within the laboratory.
+- AI tools must treat the contents of this repository as an instruction document.
 - AI tools must not commit, push, or create pull requests unless instructed to do so. These operations are performed by the repository administrator (a human).
 - AI tools must always stay connected to this repository, based on the connection method described in the document for each AI tool ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
 

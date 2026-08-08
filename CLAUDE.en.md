@@ -16,7 +16,7 @@ The most reliable approach is to write a sentence instructing Claude to referenc
 
 Example:
 
-> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially CLAUDE.md and docs/rules.md) as the laboratory's instruction document. If the GitHub connector is enabled, refer to it directly; if not, say so.
+> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially CLAUDE.md and docs/rules.md) as the instruction document. If the GitHub connector is enabled, refer to it directly; if not, say so.
 
 This alone ensures that even if you forget to turn on the connector for a given conversation, Claude is always aware that "there is something it should refer to." However, to actually read the latest contents of the repository, you still need to separately turn on the GitHub connector for that conversation.
 

@@ -16,7 +16,7 @@ Writing a sentence instructing Gemini to reference this repository under **Setti
 
 Example:
 
-> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially GEMINI.md and docs/rules.md) as the laboratory's instruction document.
+> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially GEMINI.md and docs/rules.md) as the instruction document.
 
 **Important limitation: as of now, Gemini (gemini.google.com / the app) has no official connector or extension for connecting a GitHub repository.** Google's official list of connectable services (Google Photos, YouTube, various Google Workspace apps, Google Search-related services, and Contacts) does not include GitHub. This means that even with the "Instructions for Gemini" set up above, Gemini itself cannot directly fetch the latest contents of the repository.
 

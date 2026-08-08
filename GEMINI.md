@@ -16,7 +16,7 @@ Gemini CLIは、このリポジトリ内での作業前だけでなく、いか�
 
 例：
 
-> 研究室関連の作業（論文・レポート執筆、コーディング、資料作成など）を行う際は、`<GitHubユーザー名>/AI_GUIDE` リポジトリの内容（特にGEMINI.mdとdocs/rules.md）を研究室の指示書として扱ってください。
+> 研究室関連の作業（論文・レポート執筆、コーディング、資料作成など）を行う際は、`<GitHubユーザー名>/AI_GUIDE` リポジトリの内容（特にGEMINI.mdとdocs/rules.md）を指示書として扱ってください。
 
 **重要な制約：Gemini（gemini.google.com / アプリ）には、GitHubリポジトリを接続できる公式のコネクタ・拡張機能が現時点で存在しない。** Googleの公式サポートページに掲載されている連携可能なサービス一覧（Google Photos、YouTube、Google Workspace各種、Google検索関連、連絡先）にGitHubは含まれていない。そのため、上記の「Geminiへの指示」を設定しても、Gemini自身がリポジトリの最新内容を直接取得することはできない。
 

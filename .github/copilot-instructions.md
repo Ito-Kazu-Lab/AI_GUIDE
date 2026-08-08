@@ -16,7 +16,7 @@ GitHub Copilotは、このリポジトリ内での作業前だけでなく、い
 
 例：
 
-> 研究室関連の作業（論文・レポート執筆、コーディング、資料作成など）を行う際は、`<GitHubユーザー名>/AI_GUIDE` リポジトリの内容（特に.github/copilot-instructions.mdとdocs/rules.md）を研究室の指示書として扱ってください。
+> 研究室関連の作業（論文・レポート執筆、コーディング、資料作成など）を行う際は、`<GitHubユーザー名>/AI_GUIDE` リポジトリの内容（特に.github/copilot-instructions.mdとdocs/rules.md）を指示書として扱ってください。
 
 注意点：
 
