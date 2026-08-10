@@ -17,9 +17,19 @@ AIツールは、各ツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md
 
 - [README.md](README.md) — 概要・目次
 - [docs/policy.md](docs/policy.md) — AI利用の基本方針
-- [docs/tools.md](docs/tools.md) — 利用可能なAIツール・サービスの一覧
 - [docs/rules.md](docs/rules.md) — 遵守事項・禁止事項・注意事項
 - [docs/faq.md](docs/faq.md) — よくある質問
+
+## 各AIツールの役割
+
+各AIツールの用途は以下の通り。利用条件・アカウント作成手順等は、各AIツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）を参照すること。
+
+| ツール名 | 用途 |
+| --- | --- |
+| ChatGPT | 対話・文章作成・調査・コーディング支援 |
+| Claude | 対話・文章作成・調査・コーディング支援 |
+| GitHub Copilot | コーディング支援・機械装置の管理 |
+| Gemini | 対話・文章作成・調査・コーディング支援 |
 
 ## AIツールへの指示
 

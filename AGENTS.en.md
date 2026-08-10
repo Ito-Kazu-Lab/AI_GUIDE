@@ -17,9 +17,19 @@ AI tools refer to this file through the tool-specific guide files ([CLAUDE.en.md
 
 - [README.en.md](README.en.md) — Overview and table of contents
 - [docs/policy.en.md](docs/policy.en.md) — Basic policy for AI use
-- [docs/tools.en.md](docs/tools.en.md) — List of available AI tools and services
 - [docs/rules.en.md](docs/rules.en.md) — Rules to follow, prohibitions, and points of caution
 - [docs/faq.en.md](docs/faq.en.md) — Frequently asked questions
+
+## Roles of Each AI Tool
+
+The purpose of each AI tool is as follows. For usage conditions, account creation steps, etc., refer to the tool-specific guide files ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
+
+| Tool | Purpose |
+| --- | --- |
+| ChatGPT | Conversation, writing, research, coding support |
+| Claude | Conversation, writing, research, coding support |
+| GitHub Copilot | Coding support, machinery/equipment management |
+| Gemini | Conversation, writing, research, coding support |
 
 ## Instructions to AI Tools
 

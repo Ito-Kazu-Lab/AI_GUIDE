@@ -6,6 +6,12 @@ GitHub Copilot refers to this file as a guide; for detailed instructions and doc
 
 GitHub Copilot must always follow the contents of [AGENTS.en.md](../AGENTS.en.md) before any work, not only before working within this repository.
 
+## Usage Conditions
+
+- Create a GitHub account linked to your university email address.
+- Apply for GitHub Education.
+- Use with the learning feature turned off.
+
 ## How to Connect with GitHub Copilot
 
 Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using Copilot (Copilot Chat on GitHub.com / Copilot in an IDE), so each is described separately.
