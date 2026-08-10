@@ -6,6 +6,10 @@ ChatGPT/Codex refers to this file as a guide; for detailed instructions and docu
 
 ChatGPT/Codex must always follow the contents of [AGENTS.en.md](AGENTS.en.md) before any work, not only before working within this repository.
 
+## Usage Conditions
+
+- Use with the learning feature turned off.
+
 ## How to Connect with ChatGPT
 
 Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using ChatGPT (ChatGPT / Codex CLI), so each is described separately.

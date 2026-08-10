@@ -6,6 +6,12 @@ GitHub Copilotは、本ファイルを案内として参照し、詳細な指示
 
 GitHub Copilotは、このリポジトリ内での作業前だけでなく、いかなる作業前にも、必ず [AGENTS.md](../AGENTS.md) の内容に従ってください。
 
+## 利用条件
+
+- GitHubアカウントを大学メールアドレスにリンクして作成すること。
+- GitHub Educationの申請を行うこと。
+- 学習機能をオフにして利用すること。
+
 ## GitHub Copilotとの連携方法
 
 「常に」連携させるには、会話ごとの手動操作に頼らない仕組みが必要である。利用している場面（GitHub.com上のCopilot Chat / IDE上のCopilot）によって設定場所が異なるため、それぞれ説明する。

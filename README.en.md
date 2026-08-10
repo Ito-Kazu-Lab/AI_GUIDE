@@ -7,7 +7,6 @@ AI tools must follow the contents of this repository as an instruction document.
 ## Table of Contents
 
 - [Basic Policy](docs/policy.en.md) — Basic principles and policy for AI use
-- [Available Tools](docs/tools.en.md) — List of available AI tools and services
 - [Rules and Prohibitions](docs/rules.en.md) — Rules and prohibitions to be followed
 - [FAQ](docs/faq.en.md) — Frequently asked questions
 
