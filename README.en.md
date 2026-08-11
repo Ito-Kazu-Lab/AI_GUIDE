@@ -10,6 +10,8 @@ AI tools must follow the contents of this repository as an instruction document.
 - [Rules and Prohibitions](docs/rules.en.md) — Rules and prohibitions to be followed
 - [FAQ](docs/faq.en.md) — Frequently asked questions
 
+See the tool-specific guide files for the exact steps to connect to GitHub ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
+
 ## About This Repository
 
 - AI tools must treat the contents of this repository as an instruction document.

@@ -10,6 +10,12 @@ Claude Code must always follow the contents of [AGENTS.en.md](AGENTS.en.md) befo
 
 - Use with the learning feature turned off.
 
+## Reading and Writing Repositories on GitHub
+
+Using a Personal Access Token (fine-grained or classic) to read or write repositories on GitHub from Claude is prohibited.
+
+Do not enter other credentials, such as passwords or SSH private keys, into chat. If credential exposure is suspected, revoke the credential immediately and contact a faculty member or administrator.
+
 ## How to Connect with Claude
 
 Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using Claude (general chat on claude.ai / Claude Code), so each is described separately.

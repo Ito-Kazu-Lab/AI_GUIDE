@@ -20,6 +20,8 @@ AI tools refer to this file through the tool-specific guide files ([CLAUDE.en.md
 - [docs/rules.en.md](docs/rules.en.md) — Rules to follow, prohibitions, and points of caution
 - [docs/faq.en.md](docs/faq.en.md) — Frequently asked questions
 
+The specific steps for connecting to GitHub are documented in each tool-specific guide file ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
+
 ## Roles of Each AI Tool
 
 The purpose of each AI tool is as follows. For usage conditions, account creation steps, etc., refer to the tool-specific guide files ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
