@@ -31,10 +31,19 @@ The GitHub connector itself can be set up as follows.
 3. Select the target repositories you want to grant access to, including this one.
 4. When you reference this connector in a conversation, ChatGPT can fetch the repository contents each time.
 
+Once connected, use ChatGPT to search, view, and analyze repository files. Where write functionality is available, create or update files only with the user's explicit instruction and confirmation. When using a private repository, include that repository in the authorized repository access. Obtain organizational approval when needed for organization-owned repositories. Connecting ChatGPT does not grant permissions that the user does not already have on GitHub.
+
 Notes:
 
 - The connector feature is available on paid plans (Plus/Pro/Team/Enterprise, etc.); availability on the Free plan is unconfirmed. On Enterprise/Edu plans it is disabled by default and an admin must enable it organization-wide.
 - Neither custom instructions nor the connector guarantee that the repository is referenced in every conversation; explicitly asking ChatGPT to reference it may be more reliable.
+
+### Official Information
+
+- OpenAI Help Center: [Apps in ChatGPT](https://help.openai.com/en/articles/11487775-apps-in-chatgpt)
+- OpenAI Help Center: [Connecting GitHub to ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt)
+
+GitHub integration availability, plan conditions, and authentication methods may change. Check the official OpenAI and GitHub information when using them.
 
 ### Method B: Have Codex CLI / Codex load it automatically (the most reliable option for an always-on connection)
 

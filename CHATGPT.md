@@ -31,10 +31,19 @@ GitHubコネクタ自体は、以下の手順で利用できる。
 3. アクセスを許可するリポジトリとして、対象リポジトリ（本リポジトリを含む）を選択する。
 4. 会話内でこのコネクタを参照すると、ChatGPTがリポジトリの内容をその都度取得できる。
 
+接続後は、ChatGPTからリポジトリ内のファイルを検索、参照、分析できる。書き込み機能が提供されている環境では、ユーザーの明示的な指示と確認に基づいてファイルを作成または更新すること。非公開リポジトリを利用する場合は、対象リポジトリをアクセス許可の対象に含める。組織所有リポジトリでは、必要に応じて組織管理者の承認を受ける。GitHub上で当該ユーザーが本来持っていない権限がChatGPTに追加されることはない。
+
 注意点：
 
 - コネクタ機能はPlus以上の有料プラン（Plus/Pro/Team/Enterprise等）向けに提供されている（無料プランでの利用可否は未確認）。Enterprise/Eduプランでは既定で無効になっており、管理者が組織単位で有効化する必要がある。
 - カスタム指示・コネクタとも、会話ごとの参照が保証されるわけではなく、明示的に参照を指示した方が確実な場合がある。
+
+### 公式情報
+
+- OpenAI Help Center: [Apps in ChatGPT](https://help.openai.com/en/articles/11487775-apps-in-chatgpt)
+- OpenAI Help Center: [Connecting GitHub to ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt)
+
+GitHub連携の提供状況、プラン条件および認証方法は変更される可能性があるため、実際の運用時にはOpenAIおよびGitHubの公式情報を確認する。
 
 ### 方法B：Codex CLI / Codexに自動的に読み込ませる（常時連携として最も確実）
 

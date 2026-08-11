@@ -6,10 +6,12 @@ GitHub Copilotは、本ファイルを案内として参照し、詳細な指示
 
 GitHub Copilotは、このリポジトリ内での作業前だけでなく、いかなる作業前にも、必ず [AGENTS.md](../AGENTS.md) の内容に従ってください。
 
+GitHub上のリポジトリを参照・更新する場合は、GitHub Copilotの利用を推奨する。
+
 ## 利用条件
 
 - GitHubアカウントを大学メールアドレスにリンクして作成すること。
-- GitHub Educationの申請を行うこと。
+- GitHub Educationの申請を行うこと。GitHub Copilot Proを無料で利用できる場合があるため、対象となる学生・教職員は申請を検討する。利用資格、提供内容、適用条件および最新情報は、[GitHub Educationの公式情報](https://github.com/education)で確認する。GitHub Copilot Proが無条件で無料になることを意味するものではない。
 - 学習機能をオフにして利用すること。
 
 ## GitHub Copilotとの連携方法

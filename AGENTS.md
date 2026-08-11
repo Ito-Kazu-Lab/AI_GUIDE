@@ -20,6 +20,8 @@ AIツールは、各ツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md
 - [docs/rules.md](docs/rules.md) — 遵守事項・禁止事項・注意事項
 - [docs/faq.md](docs/faq.md) — よくある質問
 
+GitHub連携の具体的な手順は、各AIツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）にそれぞれ記載する。
+
 ## 各AIツールの役割
 
 各AIツールの用途は以下の通り。利用条件・アカウント作成手順等は、各AIツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）を参照すること。

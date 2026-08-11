@@ -27,3 +27,5 @@ AI tools must work in such a way that the validity and appropriateness of their 
 - AI tools must not perform fully autonomous operations in equipment control.
 
 ## Points of Caution
+
+- Do not include confidential information, such as passwords, access tokens, private keys, or personal information, in what you enter into or store in AI tools. If credential exposure is suspected, revoke the credential immediately and contact a faculty member or administrator.

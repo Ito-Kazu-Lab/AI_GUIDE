@@ -6,10 +6,12 @@ GitHub Copilot refers to this file as a guide; for detailed instructions and doc
 
 GitHub Copilot must always follow the contents of [AGENTS.en.md](../AGENTS.en.md) before any work, not only before working within this repository.
 
+GitHub Copilot is recommended for viewing and updating repositories on GitHub.
+
 ## Usage Conditions
 
 - Create a GitHub account linked to your university email address.
-- Apply for GitHub Education.
+- Apply for GitHub Education. GitHub Copilot Pro may be available at no cost, so eligible students and faculty/staff should consider applying. Check the [official GitHub Education information](https://github.com/education) for eligibility, benefits, terms, and current details. This does not mean that GitHub Copilot Pro is unconditionally free.
 - Use with the learning feature turned off.
 
 ## How to Connect with GitHub Copilot
