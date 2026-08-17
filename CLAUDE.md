@@ -48,19 +48,25 @@ GitHubコネクタ自体は、GitHubが公式にホストするリモートMCP�
 プロジェクトごとに `CLAUDE.md` を置く方法もあるが、**グローバル設定ファイル**に本リポジトリを読み込む設定をしておくと、どのプロジェクトで作業していても常に自動的に読み込まれるため、より確実である。
 
 1. 本リポジトリをローカルにクローンする（`git clone https://github.com/<GitHubユーザー名>/AI_GUIDE.git`）。
-2. グローバル設定ファイル `~/.claude/CLAUDE.md`（Windowsの場合 `C:\Users\<ユーザー名>\.claude\CLAUDE.md`、macOS/Linuxの場合 `/home/<ユーザー名>/.claude/CLAUDE.md` など）に、クローンしたリポジトリの `AGENTS.md` を `@` インポート構文で1行追記する。存在しない場合は新規作成する。
+2. グローバル設定ファイル `~/.claude/CLAUDE.md`（Windowsの場合 `C:\Users\<ユーザー名>\.claude\CLAUDE.md`、macOS/Linuxの場合 `/home/<ユーザー名>/.claude/CLAUDE.md` など）に、クローンしたリポジトリの `AGENTS.md`・`docs/rules.md`・`docs/policy.md` を `@` インポート構文でそれぞれ1行ずつ追記する。存在しない場合は新規作成する。
 
    ```
    @<クローンしたリポジトリの絶対パス>/AGENTS.md
+   @<クローンしたリポジトリの絶対パス>/docs/rules.md
+   @<クローンしたリポジトリの絶対パス>/docs/policy.md
    ```
 
    例（Windowsの場合）：
 
    ```
    @C:\Users\<ユーザー名>\path\to\AI_GUIDE\AGENTS.md
+   @C:\Users\<ユーザー名>\path\to\AI_GUIDE\docs\rules.md
+   @C:\Users\<ユーザー名>\path\to\AI_GUIDE\docs\policy.md
    ```
 
-3. Claude Codeはセッションごとにグローバル `CLAUDE.md` を自動的に読み込み、`@` で指定したファイルの内容を展開してコンテキストに含めるため、作業中のプロジェクトを問わず、明示的な操作なしに毎回本リポジトリの内容が読み込まれる。
+   > **注意**：`AGENTS.md` 内にある `docs/rules.md` や `docs/policy.md` への参照は通常のMarkdownリンクであり、Claude Codeの `@` インポート構文ではない。そのため `AGENTS.md` だけを `@` インポートしても、これらのファイルの中身は自動的にコンテキストへ展開されない。遵守事項・禁止事項（docs/rules.md）やAI利用の基本方針（docs/policy.md）を毎回確実に読み込ませたい場合は、上記のように個別に `@` インポートする必要がある。
+
+3. Claude Codeはセッションごとにグローバル `CLAUDE.md` を自動的に読み込み、`@` で指定した各ファイル（AGENTS.md・docs/rules.md・docs/policy.md）の内容を展開してコンテキストに含めるため、作業中のプロジェクトを問わず、明示的な操作なしに毎回これらの内容が読み込まれる。
 4. 本リポジトリの内容を更新したい場合は `git pull` するだけで、次回セッションから最新内容が反映される。
 
 ### まとめ
@@ -68,6 +74,6 @@ GitHubコネクタ自体は、GitHubが公式にホストするリモートMCP�
 | 場面 | 設定場所 | 効果 |
 | --- | --- | --- |
 | claude.aiでのチャット全般 | 設定 → プロフィール → 個人的な好み | 全会話で自動的に参照の指示が読み込まれる（内容取得にはコネクタを別途オンにする必要がある） |
-| Claude Code | グローバル設定ファイル `~/.claude/CLAUDE.md`（`@`インポート） | 作業中のプロジェクトを問わず、セッションごとに内容が自動的に読み込まれる |
+| Claude Code | グローバル設定ファイル `~/.claude/CLAUDE.md`（AGENTS.md・docs/rules.md・docs/policy.mdを`@`インポート） | 作業中のプロジェクトを問わず、セッションごとに内容が自動的に読み込まれる |
 
 両方を設定しておくと、「研究室関連の作業をする時は常に本リポジトリを踏まえる」という状態に近づく。
