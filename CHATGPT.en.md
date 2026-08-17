@@ -4,7 +4,14 @@
 
 ChatGPT/Codex refers to this file as a guide; for detailed instructions and document structure, refer to [AGENTS.en.md](AGENTS.en.md). ChatGPT/Codex loads AGENTS.md natively, so this file is mainly used as a guide for connecting with ChatGPT.
 
-ChatGPT/Codex must always follow the contents of [AGENTS.en.md](AGENTS.en.md) before any work, not only before working within this repository.
+Before any work—not only work within this repository—ChatGPT/Codex must actually read and follow all four of the following documents:
+
+- [AGENTS.en.md](AGENTS.en.md)
+- [CHATGPT.en.md](CHATGPT.en.md)
+- [docs/rules.en.md](docs/rules.en.md)
+- [docs/policy.en.md](docs/policy.en.md)
+
+Even in environments where `AGENTS.md` is loaded automatically, the contents of the other three documents may not be loaded automatically. ChatGPT/Codex must review each document individually. If any document is missing, unreadable, or cannot be reviewed in full, it must not start the work and must inform the user.
 
 ## Usage Conditions
 
@@ -20,7 +27,7 @@ The most reliable approach is to write a sentence instructing ChatGPT to referen
 
 Example:
 
-> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially CHATGPT.md and docs/rules.md) as the instruction document. If the GitHub connector is enabled, refer to it directly; if not, say so.
+> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), read AGENTS.en.md, CHATGPT.en.md, docs/rules.en.md, and docs/policy.en.md in the `<your-github-username>/AI_GUIDE` repository and treat all four as instruction documents. If the GitHub connector is enabled, refer to it directly; if not, say so.
 
 This alone ensures that even if you forget to set up the connector for a given conversation, ChatGPT is always aware that "there is something it should refer to." However, to actually read the latest contents of the repository, you still need to separately enable the GitHub connector for that conversation.
 
