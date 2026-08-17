@@ -48,19 +48,25 @@ Notes:
 You can also place a `CLAUDE.md` file in each individual project, but setting up your **global configuration file** to load this repository is more reliable, since it is then loaded automatically no matter which project you are working in.
 
 1. Clone this repository locally (`git clone https://github.com/<your-github-username>/AI_GUIDE.git`).
-2. Add a single line to your global configuration file — `~/.claude/CLAUDE.md` (on Windows, `C:\Users\<your-username>\.claude\CLAUDE.md`; on macOS/Linux, `/home/<your-username>/.claude/CLAUDE.md` or similar) — using the `@` import syntax to reference the cloned repository's `AGENTS.md`. Create the file if it does not already exist.
+2. Add one line each for the cloned repository's `AGENTS.md`, `docs/rules.md`, and `docs/policy.md` to your global configuration file — `~/.claude/CLAUDE.md` (on Windows, `C:\Users\<your-username>\.claude\CLAUDE.md`; on macOS/Linux, `/home/<your-username>/.claude/CLAUDE.md` or similar) — using the `@` import syntax. Create the file if it does not already exist.
 
    ```
    @<absolute-path-to-the-cloned-repository>/AGENTS.md
+   @<absolute-path-to-the-cloned-repository>/docs/rules.md
+   @<absolute-path-to-the-cloned-repository>/docs/policy.md
    ```
 
    Example (Windows):
 
    ```
    @C:\Users\<your-username>\path\to\AI_GUIDE\AGENTS.md
+   @C:\Users\<your-username>\path\to\AI_GUIDE\docs\rules.md
+   @C:\Users\<your-username>\path\to\AI_GUIDE\docs\policy.md
    ```
 
-3. Claude Code automatically loads the global `CLAUDE.md` every session and expands the file referenced by `@` into context, so the contents of this repository are loaded every time without any explicit action, regardless of which project you are working in.
+   > **Note**: The references to `docs/rules.md` and `docs/policy.md` inside `AGENTS.md` are ordinary Markdown links, not Claude Code's `@` import syntax. Therefore, importing only `AGENTS.md` with `@` will not automatically expand the contents of those files into context. If you want the compliance/prohibition rules (docs/rules.md) and the basic AI usage policy (docs/policy.md) to be loaded reliably every time, you need to `@`-import them individually as shown above.
+
+3. Claude Code automatically loads the global `CLAUDE.md` every session and expands each file referenced by `@` (AGENTS.md, docs/rules.md, docs/policy.md) into context, so their contents are loaded every time without any explicit action, regardless of which project you are working in.
 4. To update the contents from this repository, simply run `git pull`, and the latest version will be reflected starting with your next session.
 
 ### Summary
@@ -68,6 +74,6 @@ You can also place a `CLAUDE.md` file in each individual project, but setting up
 | Context | Setup Location | Effect |
 | --- | --- | --- |
 | General chat on claude.ai | Settings → Profile → Personal preferences | The instruction to refer to the repository is automatically loaded in every conversation (you still need to separately turn on the connector to fetch the actual content). |
-| Claude Code | Global configuration file `~/.claude/CLAUDE.md` (`@` import) | The content is automatically loaded every session, regardless of which project you are working in. |
+| Claude Code | Global configuration file `~/.claude/CLAUDE.md` (`@`-import AGENTS.md, docs/rules.md, docs/policy.md) | The content is automatically loaded every session, regardless of which project you are working in. |
 
 Setting up both gets you close to a state where laboratory-related work always takes this repository into account.
