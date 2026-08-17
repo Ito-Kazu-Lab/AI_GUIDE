@@ -4,14 +4,7 @@
 
 ChatGPT/Codex refers to this file as a guide; for detailed instructions and document structure, refer to [AGENTS.en.md](AGENTS.en.md). ChatGPT/Codex loads AGENTS.md natively, so this file is mainly used as a guide for connecting with ChatGPT.
 
-Before any work—not only work within this repository—ChatGPT/Codex must actually read and follow all four of the following documents:
-
-- [AGENTS.en.md](AGENTS.en.md)
-- [CHATGPT.en.md](CHATGPT.en.md)
-- [docs/rules.en.md](docs/rules.en.md)
-- [docs/policy.en.md](docs/policy.en.md)
-
-Even in environments where `AGENTS.md` is loaded automatically, the contents of the other three documents may not be loaded automatically. ChatGPT/Codex must review each document individually. If any document is missing, unreadable, or cannot be reviewed in full, it must not start the work and must inform the user.
+ChatGPT/Codex must always follow the contents of [AGENTS.en.md](AGENTS.en.md) before any work, not only before working within this repository.
 
 ## Usage Conditions
 
@@ -27,7 +20,7 @@ The most reliable approach is to write a sentence instructing ChatGPT to referen
 
 Example:
 
-> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), read AGENTS.en.md, CHATGPT.en.md, docs/rules.en.md, and docs/policy.en.md in the `<your-github-username>/AI_GUIDE` repository and treat all four as instruction documents. If the GitHub connector is enabled, refer to it directly; if not, say so.
+> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially CHATGPT.md and docs/rules.md) as the instruction document. If the GitHub connector is enabled, refer to it directly; if not, say so.
 
 This alone ensures that even if you forget to set up the connector for a given conversation, ChatGPT is always aware that "there is something it should refer to." However, to actually read the latest contents of the repository, you still need to separately enable the GitHub connector for that conversation.
 
@@ -54,11 +47,17 @@ GitHub integration availability, plan conditions, and authentication methods may
 
 ### Method B: Have Codex CLI / Codex load it automatically (the most reliable option for an always-on connection)
 
-Unlike Claude Code or Gemini CLI, Codex CLI does not support an `@file-path` import syntax. This means the global configuration file must contain the actual content itself, not a reference to it.
+Codex CLI / Codex automatically loads the global configuration file `~/.codex/AGENTS.md`, but it does not automatically expand Markdown links or load the contents of other files mentioned there. Therefore, the global configuration must explicitly instruct Codex to read the required documents from a local clone of this repository.
 
 1. Clone this repository locally (`git clone https://github.com/<your-github-username>/AI_GUIDE.git`).
-2. Copy the contents of the cloned repository's `AGENTS.md` into your global configuration file, `~/.codex/AGENTS.md` (the base directory can be changed via the `$CODEX_HOME` environment variable; it defaults to `~/.codex`). Create the file if it does not already exist.
-3. Codex CLI / Codex automatically loads both the global `~/.codex/AGENTS.md` and the `AGENTS.md` in the project you are working on (if present) every session, merging them into context.
-4. When you update this repository, run `git pull` and then manually replace the contents of `~/.codex/AGENTS.md` with the latest version — this is not synced automatically.
+2. Create the global configuration file `~/.codex/AGENTS.md` (the base directory can be changed via the `$CODEX_HOME` environment variable; it defaults to `~/.codex`).
+3. Using the absolute path to the clone, instruct Codex in `~/.codex/AGENTS.md` to actually open, read in full, and follow all four of the following documents before any work:
+   - `AGENTS.en.md`
+   - `CHATGPT.en.md`
+   - `docs/rules.en.md`
+   - `docs/policy.en.md`
+4. Instruct Codex not to start work and to notify the user if any document is missing, unreadable, or cannot be reviewed in full.
+5. Codex CLI / Codex loads both the global `~/.codex/AGENTS.md` and the `AGENTS.md` in the project you are working on (if present) each session, merging them into context.
+6. When this repository is updated, run `git pull` in the local clone. If the global configuration refers to the local documents by absolute path, there is no need to copy their contents into `~/.codex/AGENTS.md` again.
 
-If an always-on connection is the goal, Method B is the most reliable, but note that updates to the repository are not reflected automatically. Method A is a useful complement if you also want to reference the same content in ChatGPT from the browser.
+Method B is the most reliable option for an always-on connection, but Codex must have local permission to read all four documents.
