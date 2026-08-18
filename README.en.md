@@ -9,6 +9,7 @@ AI tools must follow the contents of this repository as an instruction document.
 - [Basic Policy](docs/policy.en.md) — Basic principles and policy for AI use
 - [Rules and Prohibitions](docs/rules.en.md) — Rules and prohibitions to be followed
 - [FAQ](docs/faq.en.md) — Frequently asked questions
+- [Incident Records](docs/incidents/index.en.md) — Index of issues and unresolved incidents
 
 See the tool-specific guide files for the exact steps to connect to GitHub ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
 
