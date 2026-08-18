@@ -19,6 +19,7 @@ AI tools refer to this file through the tool-specific guide files ([CLAUDE.en.md
 - [docs/policy.en.md](docs/policy.en.md) — Basic policy for AI use
 - [docs/rules.en.md](docs/rules.en.md) — Rules to follow, prohibitions, and points of caution
 - [docs/faq.en.md](docs/faq.en.md) — Frequently asked questions
+- [docs/incidents/index.en.md](docs/incidents/index.en.md) — Incident record index
 
 The specific steps for connecting to GitHub are documented in each tool-specific guide file ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
 

@@ -19,6 +19,7 @@ AIツールは、各ツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md
 - [docs/policy.md](docs/policy.md) — AI利用の基本方針
 - [docs/rules.md](docs/rules.md) — 遵守事項・禁止事項・注意事項
 - [docs/faq.md](docs/faq.md) — よくある質問
+- [docs/incidents/index.md](docs/incidents/index.md) — インシデント記録一覧
 
 GitHub連携の具体的な手順は、各AIツール向けの案内ファイル（[CLAUDE.md](CLAUDE.md) / [GEMINI.md](GEMINI.md) / [.github/copilot-instructions.md](.github/copilot-instructions.md) / [CHATGPT.md](CHATGPT.md)）にそれぞれ記載する。
 
