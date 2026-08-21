@@ -16,9 +16,11 @@ GitHub上のリポジトリを参照・更新する場合は、GitHub Copilotの
 
 ## GitHub Copilotとの連携方法
 
-「常に」連携させるには、会話ごとの手動操作に頼らない仕組みが必要である。利用している場面（GitHub.com上のCopilot Chat / IDE上のCopilot）によって設定場所が異なるため、それぞれ説明する。
+「常に」連携させるには、会話ごとの手動操作に頼らない仕組みが必要である。利用している場面（Web/モバイル/クラウドでの作業：GitHub.com上のCopilot Chat / ローカルでの作業：IDE上のCopilot）によって設定場所が異なるため、常時GitHubと連携する方法をそれぞれ説明する。
 
-### 方法A：GitHub.com上のCopilot Chat向け
+### 方法A：常時GitHubと連携する方法（Web/モバイル/クラウドでの作業向け）
+
+GitHub.com上のCopilot Chat（Web/モバイルアプリ）を対象とする。
 
 **Copilot Chat（github.com/copilot） → 左下のプロフィールアイコン → 「Personal instructions（個人用の指示）」** に、本リポジトリの参照を指示する一文を書いておくと、github.com上のすべてのCopilot Chatの会話に自動的に適用される。
 
@@ -37,7 +39,9 @@ GitHub上のリポジトリを参照・更新する場合は、GitHub Copilotの
 2. リポジトリページから Copilot Chat を開く。
 3. チャット内でリポジトリの内容について質問すると、開いているリポジトリのコンテキストが参照される。
 
-### 方法B：IDE（VS Code等）でCopilotに自動的に読み込ませる（常時連携として最も確実）
+### 方法B：常時GitHubと連携する方法（ローカルでの作業向け）
+
+ローカル環境のIDE（VS Code等）上のCopilotを対象とする。Copilotに自動的に読み込ませる方法であり、常時連携として最も確実である。
 
 1. 本リポジトリをローカルにクローンする（`git clone https://github.com/<GitHubユーザー名>/AI_GUIDE.git`）。
 2. Copilotは、VS Code / Visual Studio / JetBrains などでワークスペースを開く際、そのリポジトリ内の `.github/copilot-instructions.md`（本ファイル）をカスタム指示として自動的に読み込む。

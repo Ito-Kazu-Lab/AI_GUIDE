@@ -12,9 +12,11 @@ Gemini CLI must always follow the contents of [AGENTS.en.md](AGENTS.en.md) befor
 
 ## How to Connect with Gemini
 
-Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using Gemini (Gemini / Gemini CLI), so each is described separately.
+Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are working (Web/mobile/cloud work: Gemini (gemini.google.com) / local work: Gemini CLI), so the ways to keep an always-on GitHub connection are described separately for each.
 
-### Method A: For Gemini (gemini.google.com)
+### Method A: Always-on GitHub connection (for work on Web/mobile/cloud)
+
+This applies to Gemini (gemini.google.com / mobile apps).
 
 Writing a sentence instructing Gemini to reference this repository under **Settings & help → Personal Intelligence → "Instructions for Gemini"** applies it automatically to every new conversation (this feature was previously called "Saved info," so the label may differ depending on your UI version).
 
@@ -26,7 +28,9 @@ Example:
 
 If you want Gemini to reference the repository's content on an ad-hoc basis, pasting the content of the relevant file directly into the chat is an alternative. Note that this requires pasting the content again in every conversation.
 
-### Method B: Have Gemini CLI load it automatically (the most reliable option for an always-on connection)
+### Method B: Always-on GitHub connection (for local work)
+
+This applies to local work with Gemini CLI. It has Gemini CLI load the repository automatically and is the most reliable option for an always-on connection.
 
 You can also place a `GEMINI.md` file in each individual project, but setting up your **global configuration file** to load this repository is more reliable, since it is then loaded automatically no matter which project you are working in.
 

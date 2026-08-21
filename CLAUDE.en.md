@@ -18,9 +18,11 @@ Do not enter other credentials, such as passwords or SSH private keys, into chat
 
 ## How to Connect with Claude
 
-Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using Claude (general chat on claude.ai / Claude Code), so each is described separately.
+Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are working (Web/mobile/cloud work: general chat on claude.ai / local work: Claude Code), so the ways to keep an always-on GitHub connection are described separately for each.
 
-### Method A: For general chat on claude.ai (Web/mobile)
+### Method A: Always-on GitHub connection (for work on Web/mobile/cloud)
+
+This applies to general chat on claude.ai (Web/mobile apps) and to work in the cloud.
 
 The most reliable approach is to write a sentence instructing Claude to reference this repository under **Settings → Profile → "What personal preferences should Claude know about?"**. Content written there is automatically loaded into every new conversation, so there is no need to toggle it on each time, unlike a connector.
 
@@ -40,10 +42,13 @@ The GitHub connector itself can be set up by registering GitHub's own officially
 
 Notes:
 
+- **Currently, Method A (the GitHub connector) works only with public repositories, even on paid plans.** Attempting to access a private repository results in `404 Not Found` and the contents cannot be retrieved (see the [incident record](docs/incidents/2026-08-18-github-copilot-connector-private-repo-404.en.md)). To reference a private repository, use Method B (local work) or paste the file contents directly into the chat.
 - Custom connectors are available only on paid plans (Pro or higher).
 - The connector is turned on/off per conversation; it does not stay on automatically. You need to enable it each time you start a new conversation.
 
-### Method B: For Claude Code
+### Method B: Always-on GitHub connection (for local work)
+
+This applies to local work with Claude Code.
 
 You can also place a `CLAUDE.md` file in each individual project, but setting up your **global configuration file** to load this repository is more reliable, since it is then loaded automatically no matter which project you are working in.
 
@@ -71,9 +76,9 @@ You can also place a `CLAUDE.md` file in each individual project, but setting up
 
 ### Summary
 
-| Context | Setup Location | Effect |
-| --- | --- | --- |
-| General chat on claude.ai | Settings → Profile → Personal preferences | The instruction to refer to the repository is automatically loaded in every conversation (you still need to separately turn on the connector to fetch the actual content). |
-| Claude Code | Global configuration file `~/.claude/CLAUDE.md` (`@`-import AGENTS.md, docs/rules.md, docs/policy.md) | The content is automatically loaded every session, regardless of which project you are working in. |
+| Method | Context | Setup Location | Effect |
+| --- | --- | --- | --- |
+| Method A | Web/mobile/cloud work (general chat on claude.ai) | Settings → Profile → Personal preferences | The instruction to refer to the repository is automatically loaded in every conversation (you still need to separately turn on the connector to fetch the actual content, and it currently works only with public repositories). |
+| Method B | Local work (Claude Code) | Global configuration file `~/.claude/CLAUDE.md` (`@`-import AGENTS.md, docs/rules.md, docs/policy.md) | The content is automatically loaded every session, regardless of which project you are working in. |
 
 Setting up both gets you close to a state where laboratory-related work always takes this repository into account.
