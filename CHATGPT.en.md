@@ -12,9 +12,11 @@ ChatGPT/Codex must always follow the contents of [AGENTS.en.md](AGENTS.en.md) be
 
 ## How to Connect with ChatGPT
 
-Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using ChatGPT (ChatGPT / Codex CLI), so each is described separately.
+Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are working (Web/mobile/cloud work: ChatGPT (chatgpt.com) / local work: Codex CLI / Codex), so the ways to keep an always-on GitHub connection are described separately for each.
 
-### Method A: For ChatGPT (chatgpt.com)
+### Method A: Always-on GitHub connection (for work on Web/mobile/cloud)
+
+This applies to ChatGPT (chatgpt.com / mobile apps).
 
 The most reliable approach is to write a sentence instructing ChatGPT to reference this repository under **Settings → Personalization → Custom Instructions**. Content written there is automatically applied to every new conversation, so there is no need to enable it each time like a connector.
 
@@ -45,7 +47,9 @@ Notes:
 
 GitHub integration availability, plan conditions, and authentication methods may change. Check the official OpenAI and GitHub information when using them.
 
-### Method B: Have Codex CLI / Codex load it automatically (the most reliable option for an always-on connection)
+### Method B: Always-on GitHub connection (for local work)
+
+This applies to local work with Codex CLI / Codex. It has the global configuration load the documents automatically and is the most reliable option for an always-on connection.
 
 Codex CLI / Codex automatically loads the global configuration file `~/.codex/AGENTS.md`, but it does not automatically expand Markdown links or load the contents of other files mentioned there. Therefore, the global configuration must explicitly instruct Codex to read the required documents from a local clone of this repository.
 

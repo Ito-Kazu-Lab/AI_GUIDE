@@ -16,9 +16,11 @@ GitHub Copilot is recommended for viewing and updating repositories on GitHub.
 
 ## How to Connect with GitHub Copilot
 
-Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are using Copilot (Copilot Chat on GitHub.com / Copilot in an IDE), so each is described separately.
+Achieving an "always-on" connection requires a mechanism that does not rely on manual per-conversation actions. The setup location depends on the context in which you are working (Web/mobile/cloud work: Copilot Chat on GitHub.com / local work: Copilot in an IDE), so the ways to keep an always-on GitHub connection are described separately for each.
 
-### Method A: For Copilot Chat on GitHub.com
+### Method A: Always-on GitHub connection (for work on Web/mobile/cloud)
+
+This applies to Copilot Chat on GitHub.com (Web/mobile apps).
 
 Writing a sentence instructing Copilot to reference this repository under **Copilot Chat (github.com/copilot) → the profile icon in the bottom-left → "Personal instructions"** applies it automatically to every Copilot Chat conversation on github.com.
 
@@ -37,7 +39,9 @@ To have Copilot actually reference this repository's content, open the target re
 2. Open Copilot Chat from the repository page.
 3. When you ask about the repository's content in the chat, the context of the repository you have open is referenced.
 
-### Method B: Have Copilot load it automatically in an IDE such as VS Code (the most reliable option for an always-on connection)
+### Method B: Always-on GitHub connection (for local work)
+
+This applies to Copilot in a local IDE (VS Code, etc.). It has Copilot load the instructions automatically and is the most reliable option for an always-on connection.
 
 1. Clone this repository locally (`git clone https://github.com/<your-github-username>/AI_GUIDE.git`).
 2. When you open the repository as a workspace in VS Code / Visual Studio / JetBrains, etc., Copilot automatically loads `.github/copilot-instructions.md` (this file) within that repository as custom instructions.
