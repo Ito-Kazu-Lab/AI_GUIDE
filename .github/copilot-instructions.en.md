@@ -26,7 +26,7 @@ Writing a sentence instructing Copilot to reference this repository under **Copi
 
 Example:
 
-> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially .github/copilot-instructions.md and docs/rules.md) as the instruction document.
+> When working on laboratory-related tasks (writing papers/reports, coding, preparing materials, etc.), treat the contents of the `<your-github-username>/AI_GUIDE` repository (especially .github/copilot-instructions.en.md and docs/rules.en.md) as the instruction document.
 
 Notes:
 
