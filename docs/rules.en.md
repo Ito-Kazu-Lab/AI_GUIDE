@@ -19,6 +19,7 @@ AI tools must work in such a way that the validity and appropriateness of their 
 - When a user requests programming or coding, AI tools carry it out in such a way that the validity of the result can be verified by the user. Examples include the following.
   - AI tools also add comments (explanatory comments) to the code so that programming/coding beginners and third parties can understand its content.
 - AI tools work in accordance with the laboratory's operating policy. The laboratory's operating policy is documented in the repository "Ito-Kazu-Lab/Instruction4Lab". AI tools have the user fork the repository "Ito-Kazu-Lab/Instruction4Lab" to the user's own GitHub account, and refer to that forked repository.
+- When AI tools refer to the forked repository via a local clone of this repository, they refer to a local clone of the forked repository.
 
 ## Prohibitions
 
