@@ -35,13 +35,17 @@ This applies to local work with Gemini CLI. It has Gemini CLI load the repositor
 You can also place a `GEMINI.md` file in each individual project, but setting up your **global configuration file** to load this repository is more reliable, since it is then loaded automatically no matter which project you are working in.
 
 1. Clone this repository locally (`git clone https://github.com/<your-github-username>/AI_GUIDE.git`).
-2. Add a single line to your global configuration file, `~/.gemini/GEMINI.md` (on Windows, `C:\Users\<your-username>\.gemini\GEMINI.md`), using the `@` import syntax to reference the cloned repository's `AGENTS.md`. Create the file if it does not already exist (this import syntax only supports `.md` files).
+2. Add one line each for the cloned repository's `AGENTS.md`, `docs/rules.md`, and `docs/policy.md` to your global configuration file, `~/.gemini/GEMINI.md` (on Windows, `C:\Users\<your-username>\.gemini\GEMINI.md`), using the `@` import syntax. Create the file if it does not already exist (this import syntax only supports `.md` files).
 
    ```
    @<absolute-path-to-the-cloned-repository>/AGENTS.md
+   @<absolute-path-to-the-cloned-repository>/docs/rules.md
+   @<absolute-path-to-the-cloned-repository>/docs/policy.md
    ```
 
-3. Gemini CLI automatically loads the global `GEMINI.md` every session and expands the file referenced by `@` into context, so the contents of this repository are loaded every time without any explicit action, regardless of which project you are working in. You can check what was actually loaded with the `/memory show` command.
+   > **Note**: The references to `docs/rules.md` and `docs/policy.md` inside `AGENTS.md` are ordinary Markdown links, not the `@` import syntax. Therefore, importing only `AGENTS.md` with `@` will not automatically expand the contents of those files into context. If you want the compliance/prohibition rules (docs/rules.md) and the basic AI usage policy (docs/policy.md) to be loaded reliably every time, you need to `@`-import them individually as shown above.
+
+3. Gemini CLI automatically loads the global `GEMINI.md` every session and expands each file referenced by `@` (AGENTS.md, docs/rules.md, docs/policy.md) into context, so the contents of this repository are loaded every time without any explicit action, regardless of which project you are working in. You can check what was actually loaded with the `/memory show` command.
 4. To update the contents from this repository, simply run `git pull`, and the latest version will be reflected starting with your next session (within an existing session, you can reload with `/memory reload`).
 
 If an always-on connection is the goal, Method B is the most reliable. Because Gemini itself cannot directly reference the repository, Method A is only a supplementary way to convey that "there is something it should refer to."

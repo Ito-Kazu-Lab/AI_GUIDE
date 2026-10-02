@@ -42,7 +42,7 @@ The GitHub connector itself can be set up by registering GitHub's own officially
 
 Notes:
 
-- **Currently, Method A (the GitHub connector) works only with public repositories, even on paid plans.** Attempting to access a private repository results in `404 Not Found` and the contents cannot be retrieved (see the [incident record](docs/incidents/2026-08-18-github-copilot-connector-private-repo-404.en.md)). To reference a private repository, use Method B (local work) or paste the file contents directly into the chat.
+- **Currently, Method A (the GitHub connector) works only with public repositories, even on paid plans.** Attempting to access a private repository results in `404 Not Found` and the contents cannot be retrieved (see the [incident record](docs/incidents/2026-08-18-github-copilot-connector-private-repo-404.en.md)). To reference a private repository, use Method B (local work) or Claude Code (including cloud sessions; it connects to GitHub through a route separate from this connector, and at the time of the incident record it could access private repositories), or paste the file contents directly into the chat.
 - Custom connectors are available only on paid plans (Pro or higher).
 - The connector is turned on/off per conversation; it does not stay on automatically. You need to enable it each time you start a new conversation.
 

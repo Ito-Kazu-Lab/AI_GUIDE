@@ -54,4 +54,4 @@ Both points above are unverified inferences that depend on Anthropic's internal 
 ## Related
 
 - The `CLAUDE.md` change history in `Instruction4Lab` shows the GitHub integration method evolving from a PAT-based approach (2026-08-04) → PAT prohibited for Claude (2026-08-11) → consolidated into this repository (`AI_GUIDE`).
-- Method A in this repository's `CLAUDE.md` ("Claude's integration method" section — the official GitHub remote MCP connector for claude.ai chat) may conflict with what this incident observed. Readers should not take it at face value and should keep in mind it may not work for private repositories.
+- Method A in this repository's `CLAUDE.md` ("Claude's integration method" section — the official GitHub remote MCP connector for claude.ai chat) may conflict with what this incident observed. Readers should not take it at face value and should keep in mind it may not work for private repositories. As of 2026-08-21, this limitation has been added to the notes under Method A in `CLAUDE.md`.
