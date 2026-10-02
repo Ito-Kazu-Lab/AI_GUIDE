@@ -10,7 +10,7 @@ AI tools refer to this file through the tool-specific guide files ([CLAUDE.en.md
 ## Repository Overview
 
 - AI tools must treat the contents of this repository as an instruction document.
-- When the user asks for an update, AI tools may update files directly (commit and push) and create pull requests. After updating, they must report the changed files, the commit SHA, the pull request URL (if one was created), and any remaining open questions to the user.
+- When the user asks for an update, AI tools may update files directly (commit and push) and create pull requests. After updating, they must report the changed files, the commit SHA, the pull request URL (if one was created), and any remaining open questions to the user. Pull requests are merged by the repository administrator (a human) after reviewing their contents.
 - AI tools must always stay connected to this repository, based on the connection method described in the document for each AI tool ([CLAUDE.en.md](CLAUDE.en.md) / [GEMINI.en.md](GEMINI.en.md) / [.github/copilot-instructions.en.md](.github/copilot-instructions.en.md) / [CHATGPT.en.md](CHATGPT.en.md)).
 
 ## Document Structure
